@@ -1,5 +1,13 @@
 # DOCKER Construcción de la imágen
 
+```
+export CR_PAT=<ACCESS TOKEN>
+```
+
+```
+echo $CR_PAT | docker login ghcr.io -u ignalog --password-stdin
+```
+
 Para hacer la build con tag 0.0.1
 
 ```
