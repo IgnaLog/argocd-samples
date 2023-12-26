@@ -26,7 +26,7 @@ gitsecret:
 
 forward:
 	@echo "| > FORWARD DE PUERTO DE ACCESO A ARGOCD"
-	kubectl port-forward service/argo-cd-argocd-server -n argocd 8080:443
+	kubectl port-forward service/argo-cd-argocd-server -n argocd 9090:443
 
 installimageupdater:
 	@echo "| > INSTALACION DE IMAGE UPDATER"
@@ -42,4 +42,4 @@ sleep:
 
 forward-app:
 	@echo "| > FORWARD DE PUERTO DE ACCESO A APP"
-	kubectl port-forward service/nginx-demo-arm -n argocd-demo 8082:80
+	kubectl port-forward service/nginx-demo-arm -n argocd-demo 9092:80
