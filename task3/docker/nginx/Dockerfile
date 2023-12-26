@@ -3,9 +3,7 @@ ARG FROM_VER
 FROM $FROM_IMG:$FROM_VER
 ARG VERSION
 
-LABEL org.opencontainers.image.authors="The Automation Rules <theautomationrules@gmail.com>" \
-      org.opencontainers.image.url="http://www.theautomationrules.com/" \
-      org.opencontainers.image.title="custom-nginx" \
+LABEL org.opencontainers.image.title="custom-nginx" \
       org.opencontainers.image.description="Docker Image to deploy a Custom NGiNX Container"
 
 # CREATE CUSTOM NGINX INDEX
